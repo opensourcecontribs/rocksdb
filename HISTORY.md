@@ -10,6 +10,7 @@
 ### Public API changes
 * Add `rocksdb_column_family_handle_get_id`, `rocksdb_column_family_handle_get_name` to get name, id of column family in C API
 * Add a new stat rocksdb.async.prefetch.abort.micros to measure time spent waiting for async prefetch reads to abort
+* CompactRange, WriteBatch, WriteBatchWithIndex C APIs now requires an error pointer (`char** errptr`) for receiving any error.
 
 ### Java API Changes
 * Add CompactionPriority.RoundRobin.
