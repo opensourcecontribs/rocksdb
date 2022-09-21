@@ -5,6 +5,8 @@
 * Add `rocksdb_writebatch_update_timestamps`, `rocksdb_writebatch_wi_update_timestamps` in C API.
 * Add `rocksdb_iter_refresh` in C API.
 * Add `rocksdb_writebatch_create_with_params`, `rocksdb_writebatch_wi_create_with_params` to create WB and WBWI with all options in C API
+* CompactRange C APIs now requires an error pointer (`char** errptr`) for receiving any error.
+* Add v2 C APIs for WriteBatch, WriteBatchWithIndex which accepts an error pointer (`char** errptr`) for receiving any error.
 
 ## 7.7.0 (09/18/2022)
 ### Bug Fixes
